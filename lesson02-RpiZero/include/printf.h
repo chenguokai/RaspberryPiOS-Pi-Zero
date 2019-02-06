@@ -99,8 +99,7 @@ void tfp_printf(char *fmt, ...);
 void tfp_sprintf(char* s,char *fmt, ...);
 
 void tfp_format(void* putp,void (*putf) (void*,char),char *fmt, va_list va);
-unsigned int __aeabi_uidivmod (unsigned int num, unsigned int modn);
-unsigned int __aeabi_uidiv (unsigned int, unsigned int);
+
 
 #define printf tfp_printf
 #define sprintf tfp_sprintf

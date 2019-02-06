@@ -24,22 +24,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 typedef void (*putcf) (void*,char);
 static putcf stdout_putf;
 static void* stdout_putp;
-unsigned int __aeabi_uidiv (unsigned int numerator, unsigned int denominator) {
-    unsigned int result;
-    result = 0;
-    while (numerator >= denominator) {
-        result++;
-        numerator -= denominator;
-    }
-    return result;
-}
 
-unsigned int __aeabi_uidivmod (unsigned int num, unsigned int modn) {
-    while (num >= modn) {
-        num -= modn;
-    }
-    return num;
-}
 
 #ifdef PRINTF_LONG_SUPPORT
 
